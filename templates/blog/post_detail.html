@@ -1,0 +1,9 @@
+<div class="post">
+    <h1>{{ post.title }}</h1>
+    <div class="body">{{ post.body }}</div>
+    <br>
+    {% if post.image %}
+        <img src="{{ post.image_thumbnail.url }}"><br><br>
+        <img src="{{ post.image.url }}">
+    {% endif %}
+</div>
